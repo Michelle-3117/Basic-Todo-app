@@ -1,0 +1,179 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Arial"
+}
+:root{
+  --main-color: #E5D2C7;
+  --body-color: #722F37;
+  --container-color: #171b3c;
+  --heading-color: #222231;
+  --box-color: #0d0f26;
+  --bg-color: #fff;
+  --nude-color: #CCB3A3;
+  --burntOrange-color: #CC5500;
+  --faintBlue-color: #AFAFED;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--nude-color) 0%, var(--burntOrange-color)100%);
+}
+
+p {
+  color: white;
+  opacity: 0.6;
+}
+.wrapper{
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background: var(--container-color);
+  border-radius: 5px;
+  padding: 25px;
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+  color:var(--nude-color)
+}
+.wrapper .input-field{
+  display: flex;
+  height: 45px;
+  width: 100%;
+}
+.search-field input{
+  margin-top: 5px;
+  width: 70%;
+  height: 100%;
+  border: 1px solid var(--bg-color);
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+.search-field button{
+  margin-top: 5px;
+  width: 40px;
+  height: 90%;
+  border: none;
+  outline: none;
+  background: green;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 2px;
+  /* opacity: 0.6;
+  pointer-events: none; */
+} 
+/* .search-field button.active{
+  opacity: 1;
+  pointer-events: auto;
+} */
+.input-field input{
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--bg-color);
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+  color: var(--box-color)
+}
+.input-field button{
+  margin-top: 5px;
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: var(--burntOrange-color);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.input-field button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .todolist{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todolist li{
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: var(--nude-color);
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  color: var(--box-color);
+  cursor: default;
+  overflow: hidden;
+}
+.todolist li #edit{
+  position: absolute;
+  right: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: var(--burntOrange-color);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+.todolist li:hover #edit{
+  right: 0px;
+}
+.todolist li #delete{
+  position: absolute;
+  left: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: var(--burntOrange-color);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.todolist li:hover #delete{
+  left: 0px;
+}
+
+.wrapper .footer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
+  color: white;
+}
+.footer button{
+  border: none;
+  outline: none;
+  background: var(--nude-color);
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 10px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.footer button.active{
+opacity: 1;
+pointer-events: auto;
+}
+#editable {
+  width: 100%;
+}

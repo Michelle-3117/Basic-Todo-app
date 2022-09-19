@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+   <header>Todo App</header>
+   <div class="search-field">
+    <label for="search-text"></label>
+    <form action="">
+    <input id="search-text" type="text" placeholder="search">
+    </form>
+    <button type="button"><i class='bx bx-search-alt'></i></button>
+   </div>
+   <div class="input-field">
+    <form action="" id="form">
+    <input id="input-text" type="text" placeholder="New Task">
+    </form>
+    <button type="button"><i class='bx bx-add-to-queue' ></i></button>
+   </div> 
+   <ul class="todolist">
+    <!-- get data from index.js (localStorage) -->
+    <!-- <li><span id="edit"><i class='bx bx-edit'></i></span><span id="delete"><i class='bx bxs-trash'></i></span></li> -->
+   </ul>
+   <div class="footer">
+    <span>You have <span class="pendingNum"></span> pending tasks</span>
+    <button>Clear All</button>
+   </div>
+  </div>
+  <script src="script/index.js"></script>
+</body>
+</html>
